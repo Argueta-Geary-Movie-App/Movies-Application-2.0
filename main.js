@@ -1,6 +1,6 @@
 "use strict";
 
-// FETCH GLITCH API
+/* FETCH GLITCH API */
 function fetchMovies () {
     fetch('https://aluminum-coral-comic.glitch.me/movies')
         .then(response => {
@@ -12,14 +12,14 @@ function fetchMovies () {
         })
         .then(movieData => {
             console.log(movieData);
-            $('#app').innerHTML = '<h1>Hurry Up, Cas!</h1>';
+            $('#app').insertAdjacentHTML('afterbegin', '<h1>Hurry Up, Cas!</h1>');
         }).catch(error => {
         console.log(error);
     });
 }
 fetchMovies();
 
-// LOADER
+/* LOADER */
 document.onreadystatechange = function () {
     if (document.readyState !== "complete") {
         document.querySelector("body").style.visibility = "hidden";
@@ -33,6 +33,7 @@ document.onreadystatechange = function () {
     }
 };
 
+/* EVENT LISTENERS */
 $('#find-movie').on('click', function () {
     alert("Search button works.");
 });
