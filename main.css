@@ -190,20 +190,203 @@
         cursor: pointer;
     }
 
+    button.find-movie:hover {
+        text-shadow: 0 0 2em rgba(255, 255, 255, 1);
+        color: #0065FF;
+        background-color: #FFDF00;
+        border-color: #0065FF;
+    }
+
+    #app {
+        background-color: #063DAA;
+        padding: 2rem;
+
+        border-width: 20px;
+        border-style: solid;
+        border-image: linear-gradient(to right, #FFAA01, #FFDF00) 1;
+    }
+
+    .card {
+        border: none;
+        text-decoration: none;
+    }
+
+    .card h2 {
+        font-family: 'Bebas Neue', cursive;
+        font-size: 2.5rem;
+        text-align: center;
+        margin: .5rem;
+        color: #063DAA;
+    }
+
+    .card img {
+        height: 50vh;
+        width: 100%;
+    }
+
+    .card div {
+        font-family: 'IBM Plex Serif', serif;
+        font-weight: bold;
+        color: white;
+        margin-top: .75em;
+        margin-left: 1.3rem;
+    }
+
+    .card button {
+        float: right;
+        margin: 0 .2rem;
+        background-color: black;
+        border: 1px solid white;
+        box-sizing: border-box;
+        font-family: 'Bebas Neue', cursive;
+        color: white;
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 10px;
+        padding: 12px 12px;
+        position: relative;
+        text-decoration: none;
+    }
+
+    .card button:hover {
+        background-color: transparent;
+        cursor: pointer;
+        color: #FFDF00;
+        border: 1px solid #FFDF00;
+    }
+
 }
 
 
-/*@media all and (max-width:30em){*/
-/*    button.find-movie{*/
-/*        display:block;*/
-/*        margin:0.4em auto;*/
-/*        }*/
-/*}*/
+@media screen and (min-width: 992px) {
+
+    #loader {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 50%;
+    height: 250px;
+}
+
+.content {
+    height: 115vh;
+    background-image: url("media/blockbuster2.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
 
 
+.search-movie {
+    float: left;
+    line-height: .8rem;
+    padding-top: 36vh;
+    margin-left: 25px;
+    position: absolute;
+}
+
+.search-movie h2 {
+    font-family: 'Nabla', cursive;
+    font-size: 5rem;
+    text-shadow: 2px 2px red;
+}
+
+.search-movie input {
+    width: 60%;
+    height: 15%;
+    margin-right: 0.2rem;
+    padding-left: .5rem;
+    border: groove .5em #0065FF;
+    border-radius: 1em;
+    font-family: 'Bebas Neue', cursive;
+    font-size: .75rem;
+}
 
 
+button.find-movie {
+    display: inline-block;
+    border: 0.11em solid #FFDF00;
+    margin: 0 0.2em 0.2em 0;
+    height: 2rem;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive;
+    font-size: .65rem;
+    font-weight: 300;
+    color: #FFAA01;
+    text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+    background-color: #0065FF;
+    text-align: center;
+    transition: all 0.15s;
+    cursor: pointer;
+}
 
+button.find-movie:hover {
+    text-shadow: 0 0 2em rgba(255, 255, 255, 1);
+    color: #0065FF;
+    background-color: #FFDF00;
+    border-color: #0065FF;
+}
+
+#app {
+    background-color: #063DAA;
+    padding: 2rem;
+
+    border-width: 20px;
+    border-style: solid;
+    border-image: linear-gradient(to right, #FFAA01, #FFDF00) 1;
+}
+
+.card {
+    border: none;
+    text-decoration: none;
+}
+
+.card h2 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: .5rem;
+    color: #063DAA;
+}
+
+.card img {
+    height: 50vh;
+    width: 100%;
+}
+
+.card div {
+    font-family: 'IBM Plex Serif', serif;
+    font-weight: bold;
+    color: white;
+    margin-top: .75em;
+    margin-left: 1.3rem;
+}
+
+.card button {
+    float: right;
+    margin: 0 .2rem;
+    background-color: black;
+    border: 1px solid white;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 10px;
+    padding: 12px 12px;
+    position: relative;
+    text-decoration: none;
+}
+
+.card button:hover {
+    background-color: transparent;
+    cursor: pointer;
+    color: #FFDF00;
+    border: 1px solid #FFDF00;
+}
+
+}
 
 
 
