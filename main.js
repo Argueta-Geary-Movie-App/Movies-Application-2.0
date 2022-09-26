@@ -12,7 +12,7 @@ function fetchMovies() {
         })
         .then(movieData => {
             console.log(movieData);
-            const html = movieData(movie => {
+            const html = movieData.map(movie => {
                 return `
                 <div id="card">
                     <div class="movie">
