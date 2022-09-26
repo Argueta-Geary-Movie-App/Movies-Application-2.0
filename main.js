@@ -5,14 +5,15 @@ function fetchMovies() {
     fetch('https://aluminum-coral-comic.glitch.me/movies')
         .then(response => {
             console.log(response);
+            // const data = response.json();
             if (!response.ok) {
                 throw Error('ERROR');
             }
             return response.json();
         })
-        .then(movieData => {
-            console.log(movieData);
-            const html = movieData.map(movie => {
+        .then(data => {
+            console.log(data);
+            const html = data.map(movie => {
                 return `
                 <div id="card">
                     <div class="movie">
@@ -26,12 +27,11 @@ function fetchMovies() {
                 `;
              })
              .join("");
-            document.querySelector('#app').insertAdjacentHTML('afterbegin', html);
-        })
-        .catch(error => {
-            console.log(error);
+            console.log(html);
+            $('#app').html(html);
         });
 }
+
 fetchMovies();
 
 
