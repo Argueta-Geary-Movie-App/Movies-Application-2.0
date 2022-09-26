@@ -10,7 +10,7 @@
 
     .content {
         height: 50vh;
-        background-image: url("Images/blockbuster2.webp");
+        background-image: url("media/blockbuster2.webp");
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
@@ -141,7 +141,7 @@
 
     .content {
         height: 75vh;
-        background-image: url("Images/blockbuster2.webp");
+        background-image: url("media/blockbuster2.webp");
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
