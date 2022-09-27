@@ -1,5 +1,5 @@
 "use strict";
-
+// test merge
 /* FETCH GLITCH API */
 function fetchMovies () {
     fetch('https://aluminum-coral-comic.glitch.me/movies')
